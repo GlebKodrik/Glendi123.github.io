@@ -128,6 +128,11 @@ nav ul li a {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
   color: #E0E0E0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about h2 {
