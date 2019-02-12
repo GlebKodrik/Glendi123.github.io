@@ -4,11 +4,21 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans:400,700,800|Play|Russo+One&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="stylesheets/style.css">
 	<title>Конвейерные ленты | К-Сервис</title>
 </head>
 <body>
 	<header class="header">
+
+		<div class="slider">
+			<div class="slider-img"><img src="img/1.jpg" alt="slide"></div>
+			<div class="slider-img"><img src="img/2.jpg" alt="slide"></div>
+			<div class="slider-img"><img src="img/3.jpg" alt="slide"></div>
+			<div class="slider-img"><img src="img/4.jpg" alt="slide"></div>
+		</div>
+
 		<div class="container">
 			<div class="header__box">
 				<img src="img/logo.png" alt="logo" class="logo">
@@ -25,6 +35,7 @@
 				</nav>
 			</div>
 		</div>
+
 	</header>
 
 	<section class="about" id="about">
@@ -209,6 +220,20 @@
   </section>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $('.slider').slick({
+		    slidesToShow: 1,
+  			slidesToScroll: 1,
+  			autoplay: true,
+  			autoplaySpeed: 4000,
+  			arrows: false,
+  			speed: 500,
+  			swipe: false
+		  });
+		});
+	</script>
 	<script src="js/script.js"></script>
 	<script src="js/scrol.js"></script>
 	<script src="js/maska.js"></script>
