@@ -1,0 +1,508 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+button:focus, input:focus {
+  outline: none;
+}
+
+body, h2, h1, p {
+  margin: 0;
+  padding: 0;
+ 
+}
+
+body {
+  overflow-x: hidden;
+}
+
+ul, ol, li {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 34px;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 242px;
+  background-color: #0088CC;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.container {
+  width: 1319px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 312px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.header__box p {
+  width: 254px;
+  font-family: "Open Sans ", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  position: relative;
+}
+.header__box p::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background-color: #0088CC;
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  border-radius: 50px;
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 49px;
+  margin-bottom: 60px;
+  color:#4A4849;
+  font-style: italic;
+}
+h1::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 750px;
+  width: 100%;
+  background-color: #0088CC;
+  margin: 0 auto;
+  border-radius: 50%;
+  left: 0;
+  margin-top: 20px;
+}
+
+.navigator {
+  background-color: #4DA4F6;
+  display: flex;
+  height: 89px;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  
+}
+nav ul li {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+nav ul li:hover {
+  background-color: #004DCA;
+}
+nav ul li a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  color: #E0E0E0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:23px;
+}
+
+.about h2 {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 28px;
+  padding-top: 35px;
+}
+.about p {
+  text-align: justify;
+  width: 842px;
+  margin-bottom: 46px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  margin: 0 auto 20px;
+}
+.about .img-lenta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 86%;
+  align-items: flex-start;
+  min-height: 544px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.about .item-img {
+  border: 4px solid #508DF4;
+}
+.products h2 {
+  font-family: "Arial", sans-serif;
+}
+.products h2::after {
+  margin-bottom: 50px;
+}
+.products .vkladka {
+  margin-bottom: 100px;
+}
+.products .vkladka .product {
+  background-color: #f6f2f2;
+  margin-bottom: 20px;
+}
+.products .vkladka .product .product-title {
+  background-color: #4DA4F6;
+  padding: 10px 15px;
+  width: 100%;
+  cursor: pointer;
+  color:white;
+  font-size:20px;
+
+}
+.products .vkladka .product .product-title h3 {
+  font-family: "Open Sans", sans-serif;
+
+}
+.products .vkladka .product .hr {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  display: none;
+}
+.products .vkladka .product .product-content {
+  display: flex;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.products .vkladka .product .product-content .product-text {
+  width: 53%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+.products .vkladka .product .product-content .product-img {
+  width: 33%;
+}
+
+.contacts {
+  padding-bottom: 100px;
+}
+.contacts .section-title {
+  margin-bottom: 30px;
+  font-family: "Arial", sans-serif;
+}
+.contacts p {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 auto;
+  width: 512px;
+  margin-bottom: 80px;
+}
+.contacts form {
+  text-align: center;
+}
+.contacts form .item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.contacts form .item .input {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 259px;
+}
+.contacts form input {
+  width: 319px;
+  height: 53px;
+  border: 1px solid #ededed;
+  background-color: #ffffff;
+  padding: 20px 15px 20px 48px;
+  border: 1px solid #A9A9A9;
+}
+.contacts form input[placeholder="Ваше имя"] {
+  background: url("../img/icon.png") no-repeat 15px center;
+}
+.contacts form input[placeholder="Ваш email"] {
+  background: url("../img/email.png") no-repeat 15px center;
+}
+.contacts form input[placeholder="Ваш телефон"] {
+  background: url("../img/phone.jpg") no-repeat 15px center;
+}
+.contacts form textarea {
+  background: url("../img/Layer_39.png") no-repeat 19px 18px;
+  padding: 20px 15px 15px 52px;
+  width: 796px;
+  height: 200px;
+}
+.contacts form .submition {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+
+}
+.contacts form button {
+  width: 202px;
+  height: 56px;
+  background-color: #4DA4F6;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.header {
+  height: 523px;
+  position: relative;
+  background-color: #fff;
+}
+
+.header .container {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: block;
+  height: 100%;
+}
+
+.slider {
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-img img {
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+section {
+  padding: 15px 0;
+}
+
+/*media*/
+@media screen and (max-width: 1340px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+
+  .about .img-lenta {
+    min-height: 821px;
+    justify-content: space-around;
+  }
+
+  .contacts form textarea {
+    width: 717px;
+  }
+
+  .about p {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header {
+    height: 573px;
+  }
+
+  .products .vkladka .product .product-content .product-img {
+    width: 42%;
+  }
+
+  .contacts form textarea {
+    width: 567px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  /*removing hovers*/
+  nav ul li:hover {
+    background-color: #4DA4F6;
+  }
+
+  .about .img-lenta {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .about .item-img {
+    margin-bottom: 15px;
+  }
+
+  .products .vkladka .product .product-content .product-img {
+    width: 100%;
+    order: 1;
+    margin-bottom: 15px;
+  }
+
+  .products .vkladka .product .product-content .product-text {
+    width: 100%;
+    order: 2;
+  }
+
+  .contacts form .item {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contacts form .item .input {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contacts form .item .input input {
+    width: 80%;
+    margin-bottom: 15px;
+  }
+
+  .contacts form textarea {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+
+  .header__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header {
+    height: 645px;
+  }
+
+  .about p {
+    font-size: 27px;
+  }
+
+  h1 {
+    font-size: 46px;
+  }
+
+  nav ul li a {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    width: 100%;
+  }
+
+  .header {
+    height: 930px;
+  }
+
+  .navigator {
+    height: auto;
+  }
+
+  .navigator nav ul {
+    flex-wrap: wrap;
+  }
+
+  .navigator nav ul li {
+    height: 89px;
+  }
+
+  .about .item-img {
+    width: 100%;
+  }
+
+  .contacts p {
+    width: 100%;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .products .vkladka .product .product-content .product-text {
+    text-align: center;
+  }
+
+  .contacts form .item .input input {
+    width: 100%;
+  }
+
+  .contacts form textarea {
+    width: 100%;
+  }
+
+  .products .vkladka {
+    margin-bottom: 15px;
+  }
+
+  .contacts {
+    padding-bottom: 50px;
+  }
+}
