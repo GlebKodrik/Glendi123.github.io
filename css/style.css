@@ -354,7 +354,7 @@ section {
   }
 
   .about p {
-    width: 100%;
+   width: 100%;
   }
 }
 
@@ -461,7 +461,9 @@ section {
   .header {
     height: 930px;
   }
-
+  .header__box p{
+    width: 270px;
+  }
   .navigator {
     height: auto;
   }
@@ -484,6 +486,7 @@ section {
 
   .about p {
     text-align: center;
+    font-size: 19px;
   }
 
   .products .vkladka .product .product-content .product-text {
