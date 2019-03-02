@@ -31,7 +31,9 @@ a {
   padding: 0;
   text-transform: uppercase;
 }
-
+ul{
+  padding-left:23px;
+}
 .section-title {
   font-family: "Pacifico", cursive;
   text-align: center;
