@@ -136,6 +136,9 @@ nav ul li {
 nav ul li:hover {
   background-color: #017CB5;
 }
+nav ul li:active{
+ background-color: #0290D9;
+}
 nav ul li a {
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
@@ -246,8 +249,9 @@ nav ul li a {
   text-align: center;
   font-size: 18px;
   margin: 0 auto;
-  width: 512px;
+  width: 100%;
   margin-bottom: 30px;
+  white-space: pre-wrap;
 }
 .contacts form {
   text-align: center;
@@ -364,6 +368,10 @@ pre{
   background-color: #017CB5;
   border-radius: 10px;
   cursor: pointer;
+
+}
+.info-box :active{
+  background-color: #0290D9;
 
 }
 
@@ -513,9 +521,9 @@ pre{
   .contects-info{
     flex-wrap: wrap;
   }
-  .info-box{
-    
-  }
+  .section-p{
+    width: 100%;
+    }
   .contacts p {
     width: 100%;
   }
