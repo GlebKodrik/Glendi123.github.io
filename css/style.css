@@ -363,6 +363,7 @@ pre{
 .info-box :hover{
   background-color: #017CB5;
   border-radius: 10px;
+  cursor: pointer;
 
 }
 
