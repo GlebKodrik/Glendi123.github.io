@@ -510,7 +510,12 @@ pre{
   .about .item-img {
     width: 100%;
   }
-
+  .contects-info{
+    flex-wrap: wrap;
+  }
+  .info-box{
+    
+  }
   .contacts p {
     width: 100%;
   }
