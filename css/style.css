@@ -115,7 +115,9 @@ h1::after {
   bottom: 0;
   width: 100%;
 }
-
+.main-menu{
+  padding:0;
+}
 nav {
   width: 100%;
 }
